@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="page">
+      <rect x="64" y="70" width="320" height="390" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <!-- Notizblock -->
+  <g stroke="#1f2937" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="64" y="70" width="320" height="390" rx="34" fill="#fffdf6"/>
+  </g>
+  <rect x="64" y="70" width="320" height="78" fill="#5b7cfa" clip-path="url(#page)"/>
+  <g stroke="#1f2937" stroke-width="14" stroke-linejoin="round" fill="none">
+    <rect x="64" y="70" width="320" height="390" rx="34"/>
+    <line x1="64" y1="148" x2="384" y2="148"/>
+  </g>
+
+  <!-- Spiralbindung -->
+  <g fill="#e5e7eb" stroke="#1f2937" stroke-width="10">
+    <rect x="104" y="40" width="26" height="62" rx="13"/>
+    <rect x="171" y="40" width="26" height="62" rx="13"/>
+    <rect x="238" y="40" width="26" height="62" rx="13"/>
+    <rect x="305" y="40" width="26" height="62" rx="13"/>
+  </g>
+
+  <!-- Vernetzte Notizen (Graph) -->
+  <g stroke="#1f2937" stroke-width="10" stroke-linecap="round">
+    <line x1="140" y1="220" x2="270" y2="205"/>
+    <line x1="140" y1="220" x2="205" y2="310"/>
+    <line x1="270" y1="205" x2="205" y2="310"/>
+    <line x1="205" y1="310" x2="130" y2="395"/>
+    <line x1="270" y1="205" x2="310" y2="300"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="10">
+    <circle cx="140" cy="220" r="26" fill="#ff9f1c"/>
+    <circle cx="270" cy="205" r="30" fill="#2ec4b6"/>
+    <circle cx="205" cy="310" r="34" fill="#e63946"/>
+    <circle cx="130" cy="395" r="22" fill="#ffd23f"/>
+    <circle cx="310" cy="300" r="20" fill="#5b7cfa"/>
+  </g>
+
+  <!-- Stecker-Badge (Connector) -->
+  <g stroke="#1f2937" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="384" cy="392" r="92" fill="#34c759"/>
+  </g>
+  <g transform="translate(384 392) rotate(45)" stroke="#1f2937" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Kabel -->
+    <path d="M0 34 V70" fill="none" stroke="#ffffff" stroke-width="16"/>
+    <!-- Kontakte -->
+    <rect x="-22" y="-66" width="14" height="32" rx="5" fill="#e5e7eb"/>
+    <rect x="8" y="-66" width="14" height="32" rx="5" fill="#e5e7eb"/>
+    <!-- Steckerkörper -->
+    <rect x="-36" y="-38" width="72" height="72" rx="18" fill="#ffffff"/>
+  </g>
+</svg>
